@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "author": "sishen",
   "license": "MIT",
-  "description": "CLI to some JavaScript string utilities",
-  "keywords": [],
+  "description": "Common utility script functions for node ~",
+  "keywords": [
+    "utility",
+    "util",
+    "node"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "repository": "",
-  "homepage": "",
-  "bugs": "",
+  "repository": "https://github.com/sishen654/node-util",
+  "homepage": "https://github.com/sishen654/node-util",
+  "bugs": "https://github.com/sishen654/node-util/issues",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
