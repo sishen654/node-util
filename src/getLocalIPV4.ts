@@ -1,6 +1,6 @@
 import os from "os"
 
-export default function getLocalIPV4() {
+export default function getLocalIPV4(): string {
   const interfaces = os.networkInterfaces()
   let IPAdress = '';
   for (let devName in interfaces) {
