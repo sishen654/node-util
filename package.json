@@ -20,20 +20,21 @@
   },
   "types": "dist/index.d.ts",
   "scripts": {
-    "watch": "cross-env NODE_ENV=development gulp",
+    "watch": "dotenv NODE_ENV=development gulp",
     "w": "yarn build --watch",
-    "build": "rimraf dist & cross-env NODE_ENV=production rollup -c",
+    "build": "rimraf dist & dotenv NODE_ENV=production rollup -c",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
     "p": "standard-version",
     "c": " git push --tags",
-    "push": "git checkout main & git push gitee-dotenv main & git push github-dotenv main"
+    "push": "git checkout main & git push gitee-node-util main & git push github-node-util main"
   },
   "files": [
     "dist/"
   ],
   "devDependencies": {
+    "@mazp/dotenv": "1.2.2",
     "@rollup/plugin-commonjs": "23.0.4",
     "@rollup/plugin-node-resolve": "15.0.1",
     "@types/fs-extra": "9.0.13",
