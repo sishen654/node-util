@@ -32,7 +32,8 @@
     "coverage": "vitest run --coverage",
     "p": "standard-version",
     "c": " git push --tags",
-    "push": "git checkout main & git push gitee-node-util main & git push github-node-util main"
+    "push": "git checkout main & git push gitee-node-util main & git push github-node-util main",
+    "push:tags": "git checkout main & git push gitee-node-util main --tags & git push github-node-util main --tags"
   },
   "files": [
     "dist/"
